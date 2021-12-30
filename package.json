@@ -1,0 +1,20 @@
+{
+  "name": "gitprojects",
+  "version": "1.0.0",
+  "main": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"gitprojects/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suryanshgith/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suryanshgith/website/issues"
+  },
+  "homepage": "https://github.com/Suryanshgith/website#readme",
+  "description": ""
+}

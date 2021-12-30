@@ -4,7 +4,6 @@
   "main": ".",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    "start":"gitprojects/index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +15,8 @@
     "url": "https://github.com/Suryanshgith/website/issues"
   },
   "homepage": "https://github.com/Suryanshgith/website#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }

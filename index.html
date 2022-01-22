@@ -1,44 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="https://res.cloudinary.com/myedugatetech/image/upload/w_64,h_64/v1636620599/Asset_7_3x_hllqpm.png" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <title>Zymeal</title>
-  <meta name="description" content="Fastor is New way to order safely & quickly. Scan, Order & Pay for easy Contact-less self checkout at food places." />
-  <meta property="og:site_name" content="Zymeal" />
-  <meta property="og:title" content="Zymeal" />
-  <meta property="og:image" itemprop="image" content="https://res.cloudinary.com/myedugatetech/image/upload/w_64,h_64/v1636620599/Asset_7_3x_hllqpm.png" />
-  <meta property="og:type" content="website" />
-  <link rel="apple-touch-icon" href="/logo192.png" />
-  <title>React App</title>
-  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+    .img {
+      height: 160px;
+      width: 384px;
+    }
+
+    .p {
+      font-size: 25px;
+      margin-left: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    .inputNumber {
+      height: 50px;
+      width: 365px;
+      border-radius: 8px;
+      overflow: hidden;
+      outline: none;
+      border: 2px solid #818181;
+      font-size: 18px;
+      text-indent: 47px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .span-placeholder {
+      position: absolute;
+      pointer-events: none;
+      left: 20px;
+      top: 270px;
+      transition: 0.2s ease all;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+    .inputNumber:hover {
+      border: 2px solid #000F6A;
+    }
+
+    .contactImg {
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: 265px;
+      left: 335px;
+    }
+
+    .span-text {
+      height: 10px;
+      width: 168px;
+      background-color: white;
+      position: absolute;
+      top: 245px;
+      left: 30px;
+      opacity: 1;
+      font-size: 14px;
+      color: #818181;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .span-text:hover {
+      color: #000F6A;
+    }
+
+    .input-checkbox {
+      height: 20px;
+      width: 20px;
+      position: relative;
+      top: 40px;
+      left: 15px;
+      display: inline-block;
+    }
+
+    .a-link {
+      text-decoration: none;
+      color: #0077EE;
+    }
+
+    .text {
+      position: relative;
+      top: 35px;
+      left: 25px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-continue {
+      position: relative;
+      width: 365px;
+      height: 60px;
+      top: 80px;
+      left: 5px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      font-weight: bold;
+      background-color: #000F6A;
+      color: white;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .inputLabel {
+      cursor: pointer;
+    }
+
+    .img2 {
+      display: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .img {
+        display: none;
+      }
+
+      .img2 {
+        display: block;
+        position: absolute;
+        top: 1200px;
+        width: 500px;
+      }
+
+      .p {
+        position: absolute;
+        left: 620px;
+        bottom: 850px;
+        font-size: 45px;
+      }
+
+      .divImg {
+        height: 2000px;
+        width: 500px;
+        background-color: #EBEDFF;
+      }
+
+      .inputNumber {
+        position: absolute;
+        left: 620px;
+        bottom:800px;
+        width:300px;
+      }
+
+      .contactImg {
+        position: absolute;
+        left: 880px;
+        top:950px;
+      }
+
+      .span-text {
+        position: absolute;
+        left: 650px;
+        top:930px;
+      }
+
+      .span-placeholder {
+        position: absolute;
+        left: 640px;
+        top:955px;
+      }
+
+      .input-checkbox {
+        position: absolute;
+        left: 620px;
+        top:1030px;
+      }
+
+      .text {
+        position: absolute;
+        left: 660px;
+        top:1033px;
+      }
+
+      .btn-continue {
+        position: absolute;
+        left:620px;
+        width:300px;
+        top:1110px;
+      }
+    }
+  </style>
+
 </head>
 
-<body><noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <script>
-    link = document.createElement("link"), link.href = "/manifest.json", link.rel = "manifest", document.getElementsByTagName("head")[0].appendChild(link)
-  </script>
-  <script>
-    ! function(e) {
-      function r(r) { for (var n, a, l = r[0], f = r[1], i = r[2], c = 0, s = []; c < l.length; c++) a = l[c], Object.prototype.hasOwnProperty.call(o, a) && o[a] && s.push(o[a][0]), o[a] = 0; for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]); for (p && p(r); s.length;) s.shift()(); return u.push.apply(u, i || []), t() }
+<body>
+  <img src="https://i.ibb.co/sHyLtSc/whatsapp-mobile-0523dbf8.png" class="img">
+  <div class="divImg"><img src="login.cc50537d.png" class="img2"></div>
+  <p class="p">Whatsapp Number</p>
+  <div>
+  <input type="tel" id="inputNumber" class="inputNumber" onclick="mouseOver()" onmouseout="mouseOut()" maxlength="10">
+  <img src="https://i.ibb.co/4K46Rb6/kindpng-1943740.png" class="contactImg">
+  <span class="span-text" id="span-text">&nbsp;Enter Phone Number*</span>
+  <span class="span-placeholder">+91</span>
+  </div>
+  <input type="checkbox" class="input-checkbox">
+  <span class="text">I agree with&nbsp;<a href="#" class="a-link">Terms & Conditions</span>
+  <label for="inputNumber" class="inputLabel"><button type="submit" class="btn-continue" onclick="mouseOver()" onmouseout="mouseOut()">Continue</button></label>
 
-      function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, l = 1; l < t.length; l++) { var f = t[l];
-            0 !== o[f] && (n = !1) } n && (u.splice(r--, 1), e = a(a.s = t[0])) } return e } var n = {},
-        o = { 1: 0 },
-        u = [];
+  <script>
+    let spanColor = document.getElementById('span-text')
 
-      function a(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, a), t.l = !0, t.exports } a.m = e, a.c = n, a.d = function(e, r, t) { a.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, a.r = function(e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, a.t = function(e, r) { if (1 & r && (e = a(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (a.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e)
-          for (var n in e) a.d(t, n, function(r) { return e[r] }.bind(null, n)); return t }, a.n = function(e) { var r = e && e.__esModule ? function() { return e.default } : function() { return e }; return a.d(r, "a", r), r }, a.o = function(e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, a.p = "/"; var l = this.webpackJsonprestaurant = this.webpackJsonprestaurant || [],
-        f = l.push.bind(l);
-      l.push = r, l = l.slice(); for (var i = 0; i < l.length; i++) r(l[i]); var p = f;
-      t() }([])
+    function mouseOver() {
+      spanColor.style.color = "#000F6A"
+    }
+
+    function mouseOut() {
+      spanColor.style.color = "#818181"
+    }
   </script>
-  <script src="/static/js/2.db1cbeee.chunk.js"></script>
-  <script src="/static/js/main.40f7f28d.chunk.js"></script>
 </body>
 
 </html>

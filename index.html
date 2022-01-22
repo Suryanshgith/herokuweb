@@ -1,298 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mini Graduate Bakery</title>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
-
-ul {
-  background-color: #FF5858;
-  margin: 0px;
-  padding: 0px;
-  font-size: 16px;
-  width: 385px;
-  height: 100%;
-}
-
-#ul {
-  list-style-type: none;
-  display: block;
-}
-
-ul>li {
-  display: inline-block;
-  margin: 8px;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-}
-
-ul>li>a{
-  text-decoration: none;
-  color:white;
-  display: inline-block;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-}
-.intro { 
-  
-  width: 385px;
-  height: 250px;
-  background: url("https://i.ibb.co/fH67Rmy/Hamburger-french-fries-and-fried-chicken-in-takeaway-containers-on-the-wooden-background-Food-delive.jpg") no-repeat fixed;
-  background-size: 385px 250px;
-}
-
-
-.content {
-  display: flex;
-  justify-content: space-around;
-  width: 385px;
-  height: 930px;
-  background-color: #FCA2A2;
-  flex-direction: column;
-}
-
-.food {
-  margin: 0px auto;
-  width: 365px;
-  height: 210px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 0px 0px 0px 15px;
-}
-
-.delivery {
-  margin: 0px auto;
-  width: 365px;
-  height: 210px;
-  background-color: #73FF6C;
-  border-radius: 20px;
-  padding: 0px 0px 0px 15px;
-}
-
-.services {
-  margin: 0px auto;
-  width: 365px;
-  height: 210px;
-  background-color: #FED84B;
-  border-radius: 20px;
-  padding: 0px 0px 0px 15px;
-}
-
-.details {
-  margin: 0px auto;
-  width: 365px;
-  height: 210px;
-  background-color: #6FB9FF;
-  border-radius: 20px;
-  padding: 0px 0px 0px 15px;
-}
-
-.closing {
-  width: 385px;
-  height: 725px;
-  background-color: orange;
-}
-
-.text {
-  color: #FFDE00;
-  padding-top: 7px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  font-family: 'Calistoga', cursive;
-}
-
-.para {
-  color: rgba(236, 236, 236, 1);
-  font-size: 15px;
-  padding-left: 5px;
-  font-family: 'Bitter', serif;
-  word-spacing: 5px;
-}
-
-.foodheading {
-  font-family: 'Mochiy Pop One', sans-serif;
-  color: #FF8B00;
-  width: 10px;
-  height: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 7px;
-}
-
-.foodpara {
-  font-size: 16px;
-  width: 300px;
-  font-family: 'Rubik', sans-serif;
-}
-
-.deliveryheading {
-  font-family: 'Mochiy Pop One', sans-serif;
-  color: #3000FFD6;
-  width: 10px;
-  height: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: right;
-  margin-left: 195px;
-  padding-bottom: 7px;
-
-}
-
-.deliverypara {
-  font-size: 16px;
-  margin-right: 10px;
-  width: 355px;
-  text-align: right;
-  font-family: 'Rubik', sans-serif;
-
-}
-
-.servicesheading {
-  font-family: 'Mochiy Pop One', sans-serif;
-  color: #FF0000;
-  width: 10px;
-  height: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 7px;
-
-}
-
-.servicespara {
-  font-size: 16px;
-  width: 300px;
-  font-family: 'Rubik', sans-serif;
-
-}
-
-.detailsheading {
-  font-family: 'Mochiy Pop One', sans-serif;
-  width: 10px;
-  height: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: right;
-  margin-left: 218px;
-  padding-bottom: 7px;
-
-}
-
-.detailspara {
-  font-size: 16px;
-  margin-right: 10px;
-  width: 355px;
-  text-align: right;
-  font-family: 'Rubik', sans-serif;
-
-}
-
-.foodimg {
-  width: 115px;
-  height: 115px;
-  float: right;
-  margin-right: 10px;
-}
-
-.deliveryimg {
-  display: flex;
-  width: 90px;
-  height: 90px;
-  float: left;
-}
-
-.servicesimg {
-  width: 90px;
-  height: 90px;
-  float: right;
-  margin-right: 10px;
-}
-
-.detailsimg {
-  display: flex;
-  width: 90px;
-  height: 90px;
-  float: left;
-}
-
-.closinghead {
-  text-align: center;
-  font-size: 50px;
-  padding-top: 10px;
-  font-family: 'Teko', sans-serif;
-}
-
-.closingpara {
-  padding-top: 12px;
-  padding-left: 10px;
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 17px;
-}
-
-.closingimg1 {
-  width: 385px;
-  height: 300px;
-  padding-top: 20px;
-}
-
-.closingimg2 {
-  width: 385px;
-  height: 250px;
-}
-  </style>
+  <meta charset="utf-8" />
+  <link rel="icon" href="https://res.cloudinary.com/myedugatetech/image/upload/w_64,h_64/v1636620599/Asset_7_3x_hllqpm.png" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Zymeal</title>
+  <meta name="description" content="Fastor is New way to order safely & quickly. Scan, Order & Pay for easy Contact-less self checkout at food places." />
+  <meta property="og:site_name" content="Zymeal" />
+  <meta property="og:title" content="Zymeal" />
+  <meta property="og:image" itemprop="image" content="https://res.cloudinary.com/myedugatetech/image/upload/w_64,h_64/v1636620599/Asset_7_3x_hllqpm.png" />
+  <meta property="og:type" content="website" />
+  <link rel="apple-touch-icon" href="/logo192.png" />
+  <title>React App</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
-  <ul id="ul">
-    <li><a href="/">Home</a></li>
-    <li><a href="/menu">Menu</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/more">More</a></li>
-  </ul>
-  <div class="intro">
-    <div class="text"> MINI GRADUATE BAKERY<br>
-    </div>
-    <p class="para">Welcome everyone to Mini Graduate Bakery.<br>Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.<br>Still what!!!Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home. 
-  </div>
-  <div class="content">
-    <div class="food">
-      <p class="foodheading">FOOD</p>
-      <img src="https://i.ibb.co/Q9k7Vvb/Pngtree-food-icon-design-vector-5243044.png" class="foodimg">
-      <p class="foodpara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.Still what!!!</p>
-    </div>
-    <div class="delivery">
-      <p class="deliveryheading">DELIVERY</p>
-      <img src="https://www.shareicon.net/data/128x128/2016/05/27/771325_transport_512x512.png" class="deliveryimg">
-      <p class="deliverypara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks in Karwi.</p>
-    </div>
-    <div class="services">
-      <p class="servicesheading">SERVICES</p>
-      <img src="https://i.ibb.co/ZHkQL94/toppng-com-managed-services-icon-services-icon-png-black-378x389.png" class="servicesimg">
-      <p class="servicespara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.Still what!!!</p>
-    </div>
-    <div class="details">
-      <p class="detailsheading">DETAILS</p>
-      <img src="https://i.ibb.co/B2T7Hr5/report-3-xxl.png" class="detailsimg">
-      <p class="detailspara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks in Karwi.</p>
-    </div>
-  </div>
-  <div class="closing">
-    <div class="closinghead">THANKS FOR VISITING</div>
-    <div class="closingpara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi Chitrakoot. </div>
-<img src="https://content.jdmagicbox.com/comp/chitrakoot-up/m2/9999p5198.5198.181215022009.e2m2/catalogue/mini-graduate-bakery-karwi-chitrakoot-up-cake-shops-i3510hiu5u.jpg" class="closingimg1"> 
-    <img src="https://i.ibb.co/Q93sYd2/IMG-20211106-183829.jpg" class="closingimg2">
-  </div>
-  <script src="main.js"></script>
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    link = document.createElement("link"), link.href = "/manifest.json", link.rel = "manifest", document.getElementsByTagName("head")[0].appendChild(link)
+  </script>
+  <script>
+    ! function(e) {
+      function r(r) { for (var n, a, l = r[0], f = r[1], i = r[2], c = 0, s = []; c < l.length; c++) a = l[c], Object.prototype.hasOwnProperty.call(o, a) && o[a] && s.push(o[a][0]), o[a] = 0; for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]); for (p && p(r); s.length;) s.shift()(); return u.push.apply(u, i || []), t() }
+
+      function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, l = 1; l < t.length; l++) { var f = t[l];
+            0 !== o[f] && (n = !1) } n && (u.splice(r--, 1), e = a(a.s = t[0])) } return e } var n = {},
+        o = { 1: 0 },
+        u = [];
+
+      function a(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, a), t.l = !0, t.exports } a.m = e, a.c = n, a.d = function(e, r, t) { a.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, a.r = function(e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, a.t = function(e, r) { if (1 & r && (e = a(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (a.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e)
+          for (var n in e) a.d(t, n, function(r) { return e[r] }.bind(null, n)); return t }, a.n = function(e) { var r = e && e.__esModule ? function() { return e.default } : function() { return e }; return a.d(r, "a", r), r }, a.o = function(e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, a.p = "/"; var l = this.webpackJsonprestaurant = this.webpackJsonprestaurant || [],
+        f = l.push.bind(l);
+      l.push = r, l = l.slice(); for (var i = 0; i < l.length; i++) r(l[i]); var p = f;
+      t() }([])
+  </script>
+  <script src="/static/js/2.db1cbeee.chunk.js"></script>
+  <script src="/static/js/main.40f7f28d.chunk.js"></script>
 </body>
 
 </html>

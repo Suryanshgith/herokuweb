@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000
 
 const fs = require('fs')
 const home = fs.readFileSync('index.html') 
-const menu = fs.readFileSync('menu.html')
+const menu = fs.readFileSync('freelance.html')
 const contact = fs.readFileSync('contact.html')
 const more = fs.readFileSync('more.html')
 
